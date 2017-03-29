@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  text-align: center;
+  flex-flow: wrap;
+
+}
+.he, .item1, .item2, .item3, .item4, .item5, footer {
+  flex: 1 100%;
+}
+
+.he {
+  background-color: tomato;
+}
+.item1 {
+  background-color: blue;
+}
+.item2 {
+  background-color: #000111;
+}
+.item3 {
+  background-color: #000555;
+}
+.item4 {
+  background-color: #aaa111;
+}
+.item5 {
+  background-color: #004441;
+}
+footer {
+  background-color: #033311;
+  display: block;
+
+}
+
+@media all and (min-width: 600px) {
+  .row1, .row2 {flex: auto}
+  /*.row2 {flex: 1 auto;}*/
+  /*.row1 {flex: 1 auto;}
+  .row2 {flex: 1 auto;}*/
+
+}
+
+@media all and (min-width: 800px) {
+  .item1, .item2 {flex: 50%}
+
+
+  .row2 {flex: auto}
+}
+
+  /*.item3 {flex: 1 33%;}
+  .item4 {flex: 1 33%;}
+  .item5 {flex: 1 33%;}*/
+
+
+
+  /*h1 {order: 1}
+  .item1 {order: 2}
+  .item2 {order: 3}
+  .item3 {order: 4}
+  .item4 {order: 5}
+  .item5 {order: 6}
+  footer {order: 7}*/
